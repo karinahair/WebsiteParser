@@ -69,9 +69,4 @@ else:
         if len(result) == 0:
             print("Не удалось извлечь данные из новостей")
         else:
-            for section, articles in result.items():
-                print(f"'{section}': [")
-                for article in articles:
-                    print(f"    {{'title': '{article['title']}',")
-                    print(f"     'link': '{article['link']}'}},")
-                print("]")
+            print(result)
