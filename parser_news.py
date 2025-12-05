@@ -48,7 +48,7 @@ else:
             
             link_tag = card.find("a", class_="node__cart__item__inside")
             if link_tag:
-                raw_link = link_tag.get("href")
+                raw_link = link_tag.get("href")[20:]
             else:
                 raw_link = None
             
